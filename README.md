@@ -1,26 +1,31 @@
 # About Us
-We are a young company passionate about making your videos cool and exciting!
-There are many more great effects in our apps(iOS, Android) and in our videos, check them out!
-[![VOCHI YOUTUBE](https://img.youtube.com/vi/wcS0o2cxK4w/0.jpg)](http://www.youtube.com/watch?v=wcS0o2cxK4w)
-https://vochi.ai/ https://vochi.app/
-With us you can learn the magick behind and help us create the future!
 
+We are a young company passionate about making your videos cool and exciting!  
+There are many more great effects in our apps(iOS, Android) and in our videos, check them out!  
+[![VOCHI YOUTUBE](https://img.youtube.com/vi/wcS0o2cxK4w/0.jpg)](http://www.youtube.com/watch?v=wcS0o2cxK4w)  
+https://vochi.ai/ https://vochi.app/  
+With us you can learn the magick behind and help us create the future!  
+ 
 # Общие требования
+
+При разработке простых эффектов используется исходный кадр из видео и картинка-маска выделенного объекта, номер кадра.  
+Одна из главных используемых библиотек - OpenCV
 
 ## Задачи
 
 - В папке tasks лежат подпапки с задачами - некоторые из наших эффектов. В каждой находятся:
-    - Файл `taks.md` с условием задачи
+    - Файл `task.md` с условием задачи
     - Видеофайл с примером готового эффекта
 - В папке effect_sandbox лежит заготовка проекта на `CMake`, которая уже включает в себя сборку `OpenCV` и пример того, как можно замерять скорость работы
-- Необязательно делать все или в определенном порядке. Чем больше (и качественнее), тем лучше
+- В папке frames лежат несколько видео покадрово вместе с соответствующими масками. Их использует пример проекта, попробуйте свой эффект на разных!
+- Необязательно делать все или в определенном порядке. Чем больше (и\или качественнее) получится, тем лучше!
 
 ## Требования
 
 - Видео с результатом работы программы
 - Исходный код (желательно с комментариями в неочевидных местах)
 - Краткое описание подхода к решению
-- Инструкция по сборке (Os, compiler, commands)
+- Инструкция по сборке (Os, compiler, commands) (если не использовали или сильно изменили effect_sandbox)
 - Замеры скорости на вашем устройстве (время на 1 кадр) и модель процессора
 
 ## Критерии оценивания
@@ -42,4 +47,4 @@ With us you can learn the magick behind and help us create the future!
   - `moments`
   - `boundingRect`
   - `split`, `merge`, `mixChannels`
-- Если вам безразлично, под какую ОС писать, выбирайте `linux` или `wsl`, так будет проще и приятнее тестировать
+- Если вы не знаете, какую ОС выбрать, выбирайте `linux` или `wsl`, так будет проще и приятнее тестировать
