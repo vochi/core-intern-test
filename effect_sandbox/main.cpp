@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
 
         cv::resize(mask, mask, img.size());
 
-        img = applyEffect(img, mask);
+        img = applyEffect(img, mask, i);
 
         writer.write(img);
 
